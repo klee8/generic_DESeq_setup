@@ -10,9 +10,11 @@ Setup folders and scripts for a differential expression analysis. The pipeline i
 - DESeq2_compare.txt with three columns for (species, condition, ref_condition). No headers in file.
 
 #### USAGE
-perl setup_DESeq_analysis.pl <config.txt> <DESeq2_compare.txt> <optional:raw_data_foldername>
-
+```{perl}
+perl setup_DESeq_analysis.pl <config.txt> <DESeq2_compare.txt> <optional:raw_data_foldername>            
+```
 (note, the raw data folder default name is 0_raw_data)
+Go to the 
 
 
 
