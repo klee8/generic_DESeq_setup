@@ -14,7 +14,12 @@ Setup folders and scripts for a differential expression analysis. The pipeline i
 perl setup_DESeq_analysis.pl <config.txt> <DESeq2_compare.txt> <optional:raw_data_foldername>            
 ```
 (note, the raw data folder default name is 0_raw_data)
-Go to the 
+Go to the 3_DESeq2 folder and setup the R scripts
+
+```{bash}
+cd 3_DESeq_analysis.pl
+bash setup_DESeq_R_Scripts.sh
+```
 
 
 
