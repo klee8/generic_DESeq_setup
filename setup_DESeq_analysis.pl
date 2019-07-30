@@ -144,7 +144,7 @@ while(<DESEQ>) {
 }
 
 # set up file structure and print Rmd files for each comparison
-open(TEMP, ">3_DESeq2/temp.sh") || die "ERROR, couldn't open temporary file for DESeq2: $!";
+open(TEMP, ">3_DESeq2/setup_DESeq_R_Scripts.sh") || die "ERROR, couldn't open temporary file for DESeq2: $!";
 foreach my $species (sort keys %comparisons){
   print TEMP "mkdir $species\n";
   foreach my $job (sort keys %{$comparisons{$species}}) {
