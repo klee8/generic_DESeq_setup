@@ -33,6 +33,9 @@ library("apeglm")
 ##BiocManager::install("ggplot2", version = "3.9")
 #library("dplyr")
 #library("ggplot2")
+
+dir.create("plots")
+dir.create("result_tables")
 ```
 
 
@@ -51,7 +54,7 @@ condition = treatment (factor levels)
 
 # import sample list and assign column and row names
 samples <- read.table("../../config.txt", header = FALSE)
-colnames(samples) <- c("pop", "center", "assay", "run_number", "lane", "sample", "experiment", "run", "condition")
+  colnames(samples) <- c("pop", "center", "assay", "run_number", "lane", "sample", "experiment", "run", "condition")
 rownames(samples) <- samples$run
 
 # subset only one species
